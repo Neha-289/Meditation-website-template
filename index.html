@@ -1,0 +1,116 @@
+<!Doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+			transition:background 0.3s linear;
+			font-family:'Oswald';
+		}
+		.logo h1{
+			font-family:'Sofia';
+			transition:color 0.5s linear;
+		}
+		.logo h1:hover{
+			color:red;
+			cursor:pointer;
+		}
+		ul li:hover{
+			color:rgba(255,0,0,1);
+			cursor:pointer;
+		}
+		@media(max-width:760px){
+			ul li{
+				margin-top:50px;
+			}
+			ul{
+				display:flex;
+				flex-direction:column;
+			}
+		}
+		.main-content{
+			position:absolute;
+			top:0;
+			width:100%;
+			z-index:-1;
+		}
+		.leftside{
+			background-image:url("https://betterme.world/articles/wp-content/uploads/2020/12/shutterstock_665429929-740x451.jpg");
+			width:100%;
+			height:100vh;
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		.rightside{
+			background:#000;
+		}
+		.right-content h1{
+			font-size:2.1875rem;
+			font-weight:400;
+			letter-spacing:0.06em;
+			line-height:1.25;
+			padding:6rem 0 2.1875rem 0;
+			
+		}
+		.right-content p{
+			border-left:1px solid #555;
+			font-weight:100;
+			font-family:'Raleway';
+			padding:2.125rem 1.875rem;
+			font-size:0.9em;
+		}
+		button{
+			border:none;
+			background:#fff;
+			letter-spacing:0.25em;
+			font-weight:700;
+			font-size:0.625rem;
+			text-transform:uppercase;
+			color:#111;
+			padding:0.9375rem 1.5625rem;
+			margin:1.875rem 0 1rem 1.875rem;
+			transition:all o.3s linear;
+		}
+		button:hover{
+			background:rgba(255,0,0,0.7);
+			color:white;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid text-white">
+		<nav class="row py-4">
+			<div class="col-lg-6 col-md-6 col-12 logo">
+				<h1>Logo</h1>
+			</div>
+			<div class="col-lg-6 col-md-6 col-12">
+				<ul  class="d-flex justify-content-around align-items-center list-unstyled text-uppercase">
+					<li>Home</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+		</nav>	
+		<div class="row main-content">
+			<div class="col-md-6 col-12 leftside"></div>
+			<div class="col-md-6 col-12 rightside d-flex justify-content-center align-items-center">
+				<div class="right-content w-50">
+				<h1>The act of meditation is being spacious.</h1>
+				<p>Give the child a taste of meditation by creating a climate and atmosphere of love, acceptance and silence.</p>
+				<button>Read More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
